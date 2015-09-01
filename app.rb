@@ -9,7 +9,8 @@ end
 
 post '/' do
 	@degrees = params[:degrees]
-	"#{@degrees} farenheit is #{farenheit_to_celsius @degrees.to_i} celsius"
+	@celsius = farenheit_to_celsius @degrees.to_i
+	erb :convert
 end
 
 def farenheit_to_celsius(degrees)
