@@ -1,2 +1,5 @@
 log/*.log
 newrelic.yml
+public/js/jquery-2.1.1.min.js
+public/js/bootstrap.min.js
+public/css/*.css

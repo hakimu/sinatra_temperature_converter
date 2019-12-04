@@ -4,16 +4,15 @@ require 'sinatra'
 require 'newrelic_rpm'
 
 get '/' do
-	erb :home
+  erb :home
 end
 
 post '/' do
-	@degrees = params[:degrees]
-	@celsius = farenheit_to_celsius @degrees.to_i
-	erb :convert
+  @degrees = params[:degrees]
+  @celsius = farenheit_to_celsius @degrees.to_i
+  erb :convert
 end
 
 def farenheit_to_celsius(degrees)
-	(degrees-32)*5/9
+  (degrees - 32) * 5 / 9
 end
-
