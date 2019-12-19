@@ -3,7 +3,7 @@ GEM
   specs:
     kgio (2.9.3)
     newrelic_rpm (3.13.0.299)
-    rack (1.6.4)
+    rack (1.6.12)
     rack-protection (1.5.3)
       rack
     raindrops (0.15.0)
